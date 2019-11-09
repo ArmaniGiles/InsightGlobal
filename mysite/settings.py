@@ -25,7 +25,9 @@ SECRET_KEY = 'i%06y2q&4l-!nv*8oolv470b!o)!xg*^9f7^d=q10#b$wd%c_e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shrouded-journey-76215.mysite.com']
+# ALLOWED_HOSTS = ['ancient-meadow-75191.mysite.com']
+ALLOWED_HOSTS = ['ancient-meadow-75191.herokuapp.com']
+
 
 
 # Application definition
