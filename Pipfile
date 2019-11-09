@@ -9,6 +9,7 @@ verify_ssl = true
 django-filter = "==1.0.0"
 django-widget-tweaks = "==1.4.1"
 Django = "==1.10.3"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
