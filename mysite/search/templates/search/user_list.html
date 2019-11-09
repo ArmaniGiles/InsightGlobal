@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+  <form method="get">
+    <div class="well" style="width:35%">
+      <h4 style="margin-top: 0">Search Zipcode</h4>
+      <div class="row" style="position: relative;">
+        <div class="form-group col-sm-16 col-md-3" style="width:65%">
+          {% render_field filter.form.JURISDICTION_NAME class="form-control" %}
+        </div>
+ 
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>
+  </form>
+<div style="height:345px;width:100%;overflow:auto;">
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>JURISDICTION_NAME</th>
+        <th>COUNT_FEMALE</th>
+        <th>COUNT_MALE</th>
+      </tr>
+    </thead>      
+    <tbody>      
+
+      {% for zip in filter.qs %}
+        <tr>
+          <td>{{ zip.JURISDICTION_NAME }}</td>
+          <td>{{ zip.COUNT_FEMALE }}</td>
+          <td>{{ zip.COUNT_MALE }}</td>
+
+        </tr>
+     
+      {% endfor %} 
+    </tbody>
+  </table></div>
+{% endblock %}
