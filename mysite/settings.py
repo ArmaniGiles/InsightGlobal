@@ -29,7 +29,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['ancient-meadow-75191.mysite.com']
 # ALLOWED_HOSTS = ['ancient-meadow-75191.herokuapp.com']
 # ALLOWED_HOSTS = ['0.0.0.0', 'localhost','bless727.herokuapp.com']
-ALLOWED_HOSTS = ['bless727.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','bless727.herokuapp.com']
 
 
 
