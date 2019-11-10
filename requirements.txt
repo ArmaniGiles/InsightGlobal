@@ -6,3 +6,4 @@ psycopg2==2.7.1
 dj-database-url==0.4.0
 whitenoise==2.0.6
 django_heroku==0.3.1 
+python-dotenv==0.10.3
