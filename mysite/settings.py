@@ -27,7 +27,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['ancient-meadow-75191.mysite.com']
 # ALLOWED_HOSTS = ['ancient-meadow-75191.herokuapp.com']
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost','thawing-ridge-35129.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost','bless727.herokuapp.com']
 
 
 
