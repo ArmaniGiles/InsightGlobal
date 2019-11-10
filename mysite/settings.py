@@ -21,13 +21,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'i%06y2q&4l-!nv*8oolv470b!o)!xg*^9f7^d=q10#b$wd%c_e'
+# export SECRET_KEY='847e44e26a02eee37a3ee0071629844b36c2ee273691d6a6'
+# export DEBUG_VALUE="True"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 # ALLOWED_HOSTS = ['ancient-meadow-75191.mysite.com']
 # ALLOWED_HOSTS = ['ancient-meadow-75191.herokuapp.com']
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost','bless727.herokuapp.com']
+# ALLOWED_HOSTS = ['0.0.0.0', 'localhost','bless727.herokuapp.com']
+ALLOWED_HOSTS = ['bless727.herokuapp.com']
 
 
 
