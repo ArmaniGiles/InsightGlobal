@@ -121,7 +121,6 @@ DATABASES = {
     }
    
 }
-import dj_database_url 
 
 # DATABASES = {}
 # DATABASES['default'] = dj_database_url.config(conn_max_age=600)
@@ -153,8 +152,8 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # )
 # django_heroku.settings(locals())
 # prod_db  =  dj_database_url.config(default='postgres://fiutbcxoyxeuqe:f23b61665dd19170ad33a4357e8f6c9d42452ba6657b8430d459efa9e5f48ec0@ec2-107-20-167-241.compute-1.amazonaws.com:5432/d7cht05qse4g2i')
+import dj_database_url 
 prod_db  =  dj_database_url.config()
-
 # print('prod_db ', prod_db)
 DATABASES['default'].update(prod_db)
 # del DATABASES['default']['OPTIONS']['sslmode']
