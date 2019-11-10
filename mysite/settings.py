@@ -154,7 +154,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 django_heroku.settings(locals())
 # prod_db  =  dj_database_url.config()
 # DATABASES['default'].update(prod_db)
-# del DATABASES['default']['OPTIONS']['sslmode']
+del DATABASES['default']['OPTIONS']['sslmode']
 # try to load local_settings.py if it exists
 # try:
 #   from local_settings import *
