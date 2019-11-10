@@ -28,7 +28,7 @@ SECRET_KEY = 'i%06y2q&4l-!nv*8oolv470b!o)!xg*^9f7^d=q10#b$wd%c_e'
 # export DEBUG_VALUE="True"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # ALLOWED_HOSTS = ['ancient-meadow-75191.mysite.com']
 # ALLOWED_HOSTS = ['ancient-meadow-75191.herokuapp.com']
 # ALLOWED_HOSTS = ['0.0.0.0', 'localhost','bless727.herokuapp.com']
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
