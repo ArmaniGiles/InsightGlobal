@@ -97,7 +97,7 @@ DATABASES = {
         'NAME': 'mysite',
         'USER':'postgres',
         'PASSWORD':'Sidewalk727',
-        'HOST':'127.0.0.1',
+        'HOST':'bless727.herokuapp.com',
         'PORT':'5432'
 
     }
