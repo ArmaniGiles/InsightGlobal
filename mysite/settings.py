@@ -90,20 +90,34 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #    }
 # }
 #--log-file -
+# DATABASES = {
+#     'default': {
+
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'mysite',
+#         'USER':'postgres',
+#         'PASSWORD':'Sidewalk727',
+#         'HOST':'bless727.herokuapp.com',
+#         'PORT':'5432'
+
+#     }
+   
+# }
+
+
 DATABASES = {
     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mysite',
         'USER':'postgres',
         'PASSWORD':'Sidewalk727',
-        'HOST':'bless727.herokuapp.com',
+        'HOST':'127.0.0.1',
         'PORT':'5432'
 
     }
    
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -132,5 +146,11 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # )
 # django_heroku.settings(locals())
 import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
+prod_db  =  dj_database_url.config()
 DATABASES['default'].update(prod_db)
+
+# try to load local_settings.py if it exists
+# try:
+#   from local_settings import *
+# except Exception as e:
+#   pass
