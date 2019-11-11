@@ -4,6 +4,6 @@ django-widget-tweaks==1.4.1
 gunicorn==19.4.5
 psycopg2==2.7.1
 dj-database-url==0.5.0
-whitenoise==2.0.6
+whitenoise==3.3.1
 django_heroku==0.3.1 
 python-dotenv==0.10.3
