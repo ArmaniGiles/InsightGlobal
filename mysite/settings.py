@@ -157,7 +157,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
-# print('prod_db ', prod_db)
+print('prod_db ', prod_db)
 DATABASES['default'].update(prod_db)
 # del DATABASES['default']['OPTIONS']['sslmode']
 # try to load local_settings.py if it exists
