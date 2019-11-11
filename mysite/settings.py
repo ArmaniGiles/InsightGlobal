@@ -50,11 +50,12 @@ INSTALLED_APPS = [
 
     'mysite.search',
 ]
-
+#whitenoise==2.0.6
+#dj-database-url==0.4.0
+ 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-       'whitenoise.middleware.WhiteNoiseMiddleware',
- 
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
